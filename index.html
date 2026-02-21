@@ -618,6 +618,197 @@ footer {
 .footer-link:hover { color: var(--mid); }
 .footer-gold { color: var(--gold); text-decoration: none; }
 
+/* ═══════════════════════════════════════
+   MOBILE RESPONSIVE — Tablet (≤900px)
+═══════════════════════════════════════ */
+@media (max-width: 900px) {
+  .container { padding: 0 24px; }
+
+  /* Nav */
+  .nav-links { display: none; }
+  .nav-actions .btn-ghost { display: none; }
+  .btn-gold { padding: 9px 16px; font-size: 12px; }
+
+  /* Hero */
+  .hero { padding: 100px 0 60px; min-height: unset; }
+  .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+  .hero-visual { display: none; }
+  .hero-title { font-size: clamp(44px, 9vw, 68px); }
+  .hero-sub { font-size: 15px; max-width: 100%; }
+  .hero-stats { gap: 20px; }
+
+  /* Pain grid */
+  .pain-grid { grid-template-columns: 1fr 1fr; }
+
+  /* Features */
+  .feature-block { grid-template-columns: 1fr; gap: 32px; padding: 60px 0; }
+  .feature-block.reverse { direction: ltr; }
+
+  /* Pricing */
+  .pricing-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+  .plan-card.featured { order: -1; }
+
+  /* Proof */
+  .proof-grid { grid-template-columns: 1fr 1fr; }
+
+  /* FAQ */
+  .faq-inner { grid-template-columns: 1fr; gap: 40px; }
+
+  /* Footer */
+  .footer-inner { flex-direction: column; gap: 24px; }
+  .footer-links { flex-wrap: wrap; gap: 16px; }
+
+  /* Strip */
+  .strip-inner { flex-wrap: wrap; gap: 16px; justify-content: flex-start; }
+  .strip-logos { flex-wrap: wrap; gap: 20px; }
+}
+
+/* ═══════════════════════════════════════
+   MOBILE RESPONSIVE — Phone (≤600px)
+═══════════════════════════════════════ */
+@media (max-width: 600px) {
+  .container { padding: 0 20px; }
+
+  /* Nav */
+  nav { height: 60px; }
+  .nav-inner { padding: 0 20px; }
+  .nav-logo { font-size: 17px; }
+  .logo-hex { width: 28px; height: 28px; font-size: 12px; }
+  .btn-gold { padding: 8px 14px; font-size: 12px; }
+
+  /* Hero */
+  .hero { padding: 90px 0 56px; }
+  .hero-title { font-size: clamp(40px, 11vw, 56px); line-height: 0.95; }
+  .hero-sub { font-size: 14px; }
+  .hero-badge { margin-bottom: 20px; }
+  .hero-ctas { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .btn-primary { width: 100%; justify-content: center; padding: 14px 24px; }
+  .btn-outline { width: 100%; justify-content: center; padding: 14px 24px; }
+  .hero-stats { gap: 16px; }
+  .stat-val { font-size: 26px; }
+  .stat-lbl { font-size: 10px; }
+
+  /* Sections */
+  .problem-section { padding: 72px 0; }
+  .features-section { padding: 0 0 72px; }
+  .pricing-section { padding: 72px 0; }
+  .proof-section { padding: 72px 0; }
+  .faq-section { padding: 72px 0; }
+  .cta-section { padding: 72px 0; }
+
+  /* Section typography */
+  .section-title { font-size: clamp(30px, 8vw, 44px); }
+  .section-sub { font-size: 14px; }
+  .eyebrow { font-size: 10px; }
+
+  /* Pain grid — single column on phone */
+  .pain-grid { grid-template-columns: 1fr; gap: 12px; }
+  .pain-card { padding: 20px; }
+
+  /* Feature blocks */
+  .feature-block { padding: 48px 0; gap: 28px; }
+  .feature-title { font-size: clamp(28px, 7vw, 40px); }
+  .feature-desc { font-size: 14px; }
+  .feature-visual { padding: 18px; }
+
+  /* Automation flow */
+  .flow-step { padding: 10px 0; }
+  .flow-title { font-size: 12px; }
+  .flow-desc { font-size: 10px; }
+
+  /* Revenue chart */
+  .revenue-amount { font-size: 36px; }
+  .bar-chart { height: 80px; gap: 5px; }
+  .bar-lbl { font-size: 8px; }
+
+  /* Pricing */
+  .pricing-grid { max-width: 100%; }
+  .plan-card { padding: 24px 20px; }
+  .plan-price { font-size: 48px; }
+  .pricing-header { margin-bottom: 36px; }
+
+  /* Proof — single column */
+  .proof-grid { grid-template-columns: 1fr; gap: 12px; }
+  .proof-quote { font-size: 16px; }
+
+  /* FAQ */
+  .faq-inner { gap: 32px; }
+  .faq-question { font-size: 13px; }
+
+  /* CTA */
+  .cta-title { font-size: clamp(36px, 9vw, 56px); }
+  .cta-sub { font-size: 14px; }
+  .cta-section .btn-primary {
+    font-size: 14px; padding: 16px 32px; width: 100%; justify-content: center;
+  }
+
+  /* Logo strip */
+  .strip-inner { padding: 0 20px; gap: 12px; }
+  .strip-label { font-size: 10px; }
+  .strip-logos { gap: 14px; }
+  .strip-logo { font-size: 11px; }
+  .strip-divider { display: none; }
+
+  /* Footer */
+  .footer-inner { gap: 20px; }
+  .footer-links { gap: 12px; }
+  .footer-link { font-size: 11px; }
+
+  /* Dashboard card — show a simplified version on mobile */
+  .hero-visual { display: none; }
+
+  /* Portal rows smaller */
+  .portal-row { padding: 10px 12px; }
+  .portal-icon { width: 30px; height: 30px; font-size: 14px; }
+  .portal-row-title { font-size: 11px; }
+  .portal-row-sub { font-size: 9px; }
+}
+
+/* ═══════════════════════════════════════
+   MOBILE NAV — Hamburger Menu
+═══════════════════════════════════════ */
+.nav-hamburger {
+  display: none;
+  flex-direction: column; gap: 5px;
+  cursor: pointer; padding: 4px;
+  background: none; border: none;
+}
+.nav-hamburger span {
+  display: block; width: 22px; height: 2px;
+  background: var(--mid); border-radius: 2px;
+  transition: all 0.2s;
+}
+
+.nav-mobile-menu {
+  display: none;
+  position: fixed; top: 60px; left: 0; right: 0; z-index: 99;
+  background: rgba(6,6,9,0.97);
+  backdrop-filter: blur(24px);
+  border-bottom: 1px solid var(--border);
+  padding: 20px 20px 24px;
+  flex-direction: column; gap: 4px;
+}
+.nav-mobile-menu.open { display: flex; }
+.nav-mobile-link {
+  font-size: 16px; font-weight: 600; color: var(--mid);
+  text-decoration: none; padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  transition: color 0.2s;
+}
+.nav-mobile-link:last-child { border-bottom: none; }
+.nav-mobile-link:hover { color: var(--text); }
+.nav-mobile-cta {
+  margin-top: 12px;
+  padding: 14px; border-radius: 10px;
+  background: var(--gold); color: var(--black);
+  font-size: 14px; font-weight: 700; text-align: center;
+  text-decoration: none; display: block; letter-spacing: 0.02em;
+}
+
+@media (max-width: 900px) {
+  .nav-hamburger { display: flex; }
+}
+
 </style>
 </head>
 <body>
@@ -637,9 +828,21 @@ footer {
     <div class="nav-actions">
       <a href="#" class="btn-ghost">Sign In</a>
       <a href="#pricing" class="btn-gold">Start Free Trial</a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
 </nav>
+
+<!-- Mobile Menu -->
+<div class="nav-mobile-menu" id="mobileMenu">
+  <a href="#features" class="nav-mobile-link" onclick="closeMenu()">Features</a>
+  <a href="#pricing"  class="nav-mobile-link" onclick="closeMenu()">Pricing</a>
+  <a href="#faq"      class="nav-mobile-link" onclick="closeMenu()">FAQ</a>
+  <a href="#"         class="nav-mobile-link" onclick="closeMenu()">Sign In</a>
+  <a href="#pricing"  class="nav-mobile-cta"  onclick="closeMenu()">Start Free Trial →</a>
+</div>
 
 <!-- ══════════ HERO ══════════ -->
 <section class="hero" id="home">
@@ -1108,7 +1311,7 @@ footer {
       <div>
         <div class="eyebrow">FAQ</div>
         <h2 class="section-title">Questions<br/>we get <em>a lot.</em></h2>
-        <p style="font-size:14px;color:var(--mid);line-height:1.7;margin-top:16px;">Not seeing your question? Email us at <a href="mailto:hello@seshh.studio" style="color:var(--gold)">hello@seshh.studio</a></p>
+        <p style="font-size:14px;color:var(--mid);line-height:1.7;margin-top:16px;">Not seeing your question? Email us at <a href="/cdn-cgi/l/email-protection#fd9598919192bd8e988e9595d38e8988999492" style="color:var(--gold)"><span class="__cf_email__" data-cfemail="4b232e2727240b382e38232365383f3e2f2224">[email&#160;protected]</span></a></p>
       </div>
 
       <div class="faq-list">
@@ -1200,11 +1403,51 @@ footer {
         <a href="#" class="footer-link">FAQ</a>
         <a href="#" class="footer-link">Privacy</a>
         <a href="#" class="footer-link">Terms</a>
-        <a href="mailto:hello@seshh.studio" class="footer-link">Contact</a>
+           <a href="mailto:hello@seshh.studio" class="footer-link">Contact</a>
       </div>
     </div>
   </div>
 </footer>
+
+<script>
+// Hamburger menu
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+
+hamburger.addEventListener('click', () => {
+  mobileMenu.classList.toggle('open');
+  const spans = hamburger.querySelectorAll('span');
+  if (mobileMenu.classList.contains('open')) {
+    spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+    spans[1].style.opacity = '0';
+    spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+  } else {
+    spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+  }
+});
+
+function closeMenu() {
+  mobileMenu.classList.remove('open');
+  const spans = hamburger.querySelectorAll('span');
+  spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+}
+
+// Close menu on outside click
+document.addEventListener('click', (e) => {
+  if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) {
+    closeMenu();
+  }
+});
+
+// FAQ accordion
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+</script>
 
 </body>
 </html>
