@@ -1326,7 +1326,7 @@ footer {
       <div>
         <div class="eyebrow">FAQ</div>
         <h2 class="section-title">Questions<br/>we get <em>a lot.</em></h2>
-        <p style="font-size:14px;color:var(--mid);line-height:1.7;margin-top:16px;">Not seeing your question? Email us at <a href="/cdn-cgi/l/email-protection#c2abaca4ad82b1a7b1b1aaecb1b6b7a6abad" style="color:var(--gold)"><span class="__cf_email__" data-cfemail="96fff8f0f9d6e5f3e5e5feb8e5e2e3f2fff9">[email&#160;protected]</span></a></p>
+        <p style="font-size:14px;color:var(--mid);line-height:1.7;margin-top:16px;">Not seeing your question? Email us at <a href="mailto:info@sessh.studio" style="color:var(--gold)">info@sessh.studio</a></p>
       </div>
 
       <div class="faq-list">
@@ -1424,7 +1424,23 @@ footer {
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+
+// Hamburger menu
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+
+hamburger.addEventListener('click', () => {
+  mobileMenu.classList.toggle('open');
+  const spans = hamburger.querySelectorAll('span');
+  if (mobileMenu.classList.contains('open')) {
+    spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+    spans[1].style.opacity = '0';
+    spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+  } else {
+    spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+  }
+});
+<script>
 // Hamburger menu
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobileMenu');
@@ -1449,4 +1465,20 @@ function closeMenu() {
 
 // Close menu on outside click
 document.addEventListener('click', (e) => {
-  if
+  if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) {
+    closeMenu();
+  }
+});
+
+// FAQ accordion
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+</script>
+
+</body>
+</html>
