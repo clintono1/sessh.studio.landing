@@ -1326,7 +1326,7 @@ footer {
       <div>
         <div class="eyebrow">FAQ</div>
         <h2 class="section-title">Questions<br/>we get <em>a lot.</em></h2>
-        <p style="font-size:14px;color:var(--mid);line-height:1.7;margin-top:16px;">Not seeing your question? Email us at <a href="mailto:info@sessh.studio" style="color:var(--gold)">info@sessh.studio</a></p>
+        <p style="font-size:14px;color:var(--mid);line-height:1.7;margin-top:16px;">Not seeing your question? Email us at <a href="/cdn-cgi/l/email-protection#a9c0c7cfc6e9daccdadac187dadddccdc0c6" style="color:var(--gold)"><span class="__cf_email__" data-cfemail="771e19111837041204041f59040302131e18">[email&#160;protected]</span></a></p>
       </div>
 
       <div class="faq-list">
@@ -1410,7 +1410,8 @@ footer {
           SESSH
         </div>
         <div class="footer-copy">© 2026 Sessh. The studio management platform.<br/>
-        Powered by <a href="#" class="footer-gold">sessh.studio</a></div>
+        Powered by <a href="/" class="footer-gold">sessh.studio</a><br/><br/>
+        <span style="font-size:11px;color:#666680;line-height:1.7;display:block;max-width:600px;margin:0 auto;">By providing your phone number and submitting a booking request, you consent to receive automated SMS messages from Sessh and its studio partners regarding booking confirmations, session reminders, file delivery notifications, and studio updates. Message and data rates may apply. Message frequency varies. Reply STOP to opt out at any time. Reply HELP for help. See our <a href="/privacy" style="color:var(--gold)">Privacy Policy</a> and <a href="/terms" style="color:var(--gold)">Terms of Service</a>.</span></div>
       </div>
       <div class="footer-links">
         <a href="/#features" class="footer-link">Features</a>
@@ -1418,7 +1419,7 @@ footer {
         <a href="/#faq" class="footer-link">FAQ</a>
         <a href="/privacy" class="footer-link">Privacy</a>
         <a href="/terms" class="footer-link">Terms</a>
-        <a href="mailto:info@sessh.studio" class="footer-link">Contact</a>
+        <a href="/cdn-cgi/l/email-protection#1f767179705f6c7a6c6c77316c6b6a7b7670" class="footer-link">Contact</a>
       </div>
     </div>
   </div>
@@ -1440,7 +1441,7 @@ hamburger.addEventListener('click', () => {
     spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
   }
 });
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // Hamburger menu
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobileMenu');
@@ -1471,14 +1472,4 @@ document.addEventListener('click', (e) => {
 });
 
 // FAQ accordion
-document.querySelectorAll('.faq-item').forEach(item => {
-  item.addEventListener('click', () => {
-    const isOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-    if (!isOpen) item.classList.add('open');
-  });
-});
-</script>
-
-</body>
-</html>
+document.querySelectorAll('.faq-item')
